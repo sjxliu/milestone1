@@ -1,1 +1,45 @@
-/* for sure */
+/* for sure later add icons and a character later on */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#game {
+    width: auto;
+    height: 250px;
+    border: 1px solid black;
+    margin: auto;
+}
+
+#character{
+    width: 20px;
+    height: 35px;
+    background-color: aqua;
+    position: relative;
+    top: 215px;}
+
+.animate{
+    animation: jump 500ms;
+}
+
+@keyframes jump {
+    0%{top: 215px;}
+    25%{top:150px;}
+    75%{top: 150px;}
+    100%{top: 215px;}
+}
+
+#killObject1{
+width: 20px;
+height: 30px;    
+background-color: crimson;
+position: relative;
+top: 185px;
+left: 320px;
+animation: killObject1 1s infinite linear;
+}
+
+@keyframes killObject1 {
+    0%{left: 1500px;}
+    100%{left: -20px;}
+}

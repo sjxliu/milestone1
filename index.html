@@ -1,16 +1,27 @@
 <!-- Name: Milestone Project -->
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" onclick="jump()">
+<!-- placement of this onclick seems... fishy -->
 <head>
-<title>Milestone Project 1</title>
+    <meta charset="UTF-8">
+    <title>Milestone Project 1</title>
+    <link rel='stylesheet' href='styles.css'>
 </head>
+
 <body>
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
+<div id="game"> 
+    <div id="character"></div> 
+    <!-- Find element to put these in other than div & wrap this all in a canvas later? -->
+    <div id="killObject1"></div>
+</div>
+
 
 </body>
+
+<script src="index.js"></script>
+
 </html>
 
 <!-- Asks for user's name and uses it to display back -->

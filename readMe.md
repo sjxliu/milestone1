@@ -10,5 +10,9 @@ Initial concept: character is moving forward with objects that will come with po
 11/8/21 [Starting Off]:
 - Basic structural coding today. Won't try and do anything fancy except get it to work! Making note to get familiar with canvas HTML 
 - Managed to get the object to move towards character infinitly  
-- Got Character able to jump
+- Got Character able to jump but only with mouse click. I want to use keyboard keys.
 - used getComputedStyle & getPropertyValue for first time, still not completely sure how to impliment them because it is not working... for now
+
+11/10/21 [Working]:
+Aiming to get space bar functional and to use it to get character to jump.
+ 

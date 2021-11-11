@@ -2,21 +2,19 @@ const character = document.getElementById("character");
 
 const killObject1 = document.getElementById("killObject1");
 
-let counter = 0;
+let score = 0;
 
-document.addEventListener("keydown", e => {
-    if (e.key === "Space") { function jump()
-        (character.classList.contains("animate"))
-    {return} character.classList.add("animate");
-    setTimeout(() => {
-        character.classList.remove("animate")
-    }, 500);
+window.addEventListener("keydown",(jump) => {
+    if (jump.key === "w") {
+        if(character.classList != "animate"){
+                character.classList.add("animate")}
+                setTimeout(function(){
+                    character.classList.remove("animate")
+                }, 500);
     }
-}) 
+})
 
 
-
-// const characterActions = {
 
 // jump(){
 //     if(character.classList != "animate"){
@@ -53,8 +51,15 @@ document.addEventListener("keydown", e => {
 let vitals = setInterval(() => {
     let characterHead = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
     let kill1 = parseInt(window.getComputedStyle(killObject1).getPropertyValue("left"));
-    if (kill1 < 20 && kill1 > 0 && characterHead>=220);
+    if (kill1 < 20 && kill1 > 0 && characterHead>=220)
     killObject1.style.animation = "none";
-    killObject1.style.display = "none";
-    alert ("You Lose.")
-}, 10);
+    alert ("You Lose. Score:" +Math.floor(counter/100));
+    counter = 0;
+    block.style.animation = "block 1s infinite linear";
+// } else { 
+//     counter++;
+// document.getElementById("score").innerHTML = Math.floor(counter/100);
+// }
+ 10);
+
+// Death (not working lol)

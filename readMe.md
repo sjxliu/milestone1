@@ -14,5 +14,5 @@ Initial concept: character is moving forward with objects that will come with po
 - used getComputedStyle & getPropertyValue for first time, still not completely sure how to impliment them because it is not working... for now
 
 11/10/21 [Working]:
-Aiming to get space bar functional and to use it to get character to jump. I wasn't able to get the spacebar to  work but managed to assign another key to work for the jump function with keydown. Added a score board but unsure if putting it under section in HTML was a good idea. Character does not die
+Aiming to get space bar functional and to use it to get character to jump. I wasn't able to get the spacebar to  work but managed to assign another key to work for the jump function with keydown. Added a score board but unsure if putting it under section in HTML was a good idea. Character does not die nor does score board show...
  

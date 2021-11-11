@@ -53,13 +53,12 @@ let vitals = setInterval(() => {
     let kill1 = parseInt(window.getComputedStyle(killObject1).getPropertyValue("left"));
     if (kill1 < 20 && kill1 > 0 && characterHead>=220)
     killObject1.style.animation = "none";
-    alert ("You Lose. Score:" +Math.floor(counter/100));
-    counter = 0;
-    block.style.animation = "block 1s infinite linear";
-// } else { 
-//     counter++;
-// document.getElementById("score").innerHTML = Math.floor(counter/100);
-// }
- 10);
+    alert ("You Lose. Score:" +Math.floor(score/100));
+    score = 0;
+    killObject1.style.animation = "killObject1 1s infinite linear";
+}else { 
+    score++;
+document.getElementById("score").innerHTML = Math.floor(score/100);
+}, 10);
 
-// Death (not working lol)
+// Death & score (not working lol)

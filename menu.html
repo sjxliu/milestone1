@@ -9,24 +9,30 @@
 <style>
 body {
     font-family: 'Chewy';font-size: 50px;
-    background-image: url("images/milestone1background.jpg") alt="background of various colored circles" src="https://pixabay.com/photos/coloured-lamps-light-energy-22644/"; 
+    background-image: url("images/milestone1background.jpg"); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  background-size: cover;
     /*  */
 }
 </style>
 </head>
 
 <body>
-    <h1 id="menuTitle" >
-        Are You Bored?
+    <h1 id="menuTitle">
+        You're Bored!
     </h1>
-    <h3 id="menuh3">Want to "take a break" from your work?</h3>
+    <h4 id="menuh4">Ready to "take a break" from your work?</h4>
+
 <div id=menu>
 <menu class="menuButtons">
-<button id="play" href="index.html">Play!</button>
+<button id="play" onclick="myFunction()">Play!</button>
 <button id="settings">Settings</button>
 <button id="exit">Exit</button>
 </menu>
 </div>
+
+<p id="credits">Created By: Jace Liu</p>
 </body>
 <script src="menu.js"></script>
 

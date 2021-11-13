@@ -43,3 +43,24 @@ animation: killObject1 1s infinite linear;
     0%{left: 1500px;}
     100%{left: -20px;}
 }
+
+#menuTitle {
+display: flex;
+justify-content: center;
+}
+
+#play{
+display: flex;
+justify-content: center; 
+}
+
+#settings{
+display: flex;
+justify-content: center;
+}
+
+#exit{
+display: flex;
+justify-content: center;
+
+}

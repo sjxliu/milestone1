@@ -15,4 +15,12 @@ Initial concept: character is moving forward with objects that will come with po
 
 11/10/21 [Working]:
 Aiming to get space bar functional and to use it to get character to jump. I wasn't able to get the spacebar to  work but managed to assign another key to work for the jump function with keydown. Added a score board but unsure if putting it under section in HTML was a good idea. Character does not die nor does score board show...
+
+11/11/21[Working]:
+Working on menu and linking it...
+
+11/12/21[Working]:
+Working on menu and linking it... my game doesn't actually work because I broke it trying to add a scoreboard and the death function.
+
+
  

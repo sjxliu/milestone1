@@ -1,0 +1,78 @@
+#menuTitle,#menuh3 {
+    display: flex;
+    justify-content: center;
+    }
+    
+    
+    .menuButtons, #play {
+    background-color: #31ffa0;
+    color: black;
+    padding: 25px;
+    margin-top: 20px;
+    justify-content: center;
+    transition-duration: 0.4s;
+    font-weight: bold;
+    font-size: 1em;
+    font-family: "Chewy";
+    /* margin-left: 300px; */
+    }
+    
+    .menuButton, #play:hover {
+        background-color: #4CAF50; /* Green */
+        color: white;
+      }
+    
+    .menuButtons, #settings{ 
+        background-color: orange;
+    color: black;
+    padding: 25px;
+    margin-top: 50px;
+    justify-content: center;
+    transition-duration: 0.4s;
+    font-weight: bold;
+    font-size: 1em;
+    font-family: "Chewy";
+    
+    }
+    
+    .menuButton, #settings:hover {
+        background-color: #E67C00; 
+        color: white;
+      }
+    
+    .menuButtons, #exit {
+        background-color: #a031ff;
+        color: black;
+        padding: 25px;
+        margin-top: 50px;
+        justify-content: center;
+        transition-duration: 0.4s;
+        font-weight: bold;
+        font-size: 1em;
+        font-family: "Chewy";
+    
+    } 
+    .menuButton, #exit:hover {
+        background-color:  #7000D1; 
+        color: white;
+      }
+    /* #7000D1 purple hover*/
+    
+    .menuButtons{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 50px;
+        /* justify-content: center; */
+        background-color: lightblue;
+        
+    /* margin: 500px; */
+    /* justify-content: center; */
+    }
+    
+    .menu {
+        justify-content: center;
+        width: 100%;
+        background-color: lightsteelblue;
+      
+    }

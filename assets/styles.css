@@ -4,6 +4,11 @@
     margin: 0;
 }
 
+#mainh1{
+    display: flex;
+    justify-content: center;
+}
+
 #game {
     width: auto;
     height: 250px;
@@ -44,23 +49,3 @@ animation: killObject1 1s infinite linear;
     100%{left: -20px;}
 }
 
-#menuTitle {
-display: flex;
-justify-content: center;
-}
-
-#play{
-display: flex;
-justify-content: center; 
-}
-
-#settings{
-display: flex;
-justify-content: center;
-}
-
-#exit{
-display: flex;
-justify-content: center;
-
-}

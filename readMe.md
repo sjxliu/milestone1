@@ -25,5 +25,8 @@ Working on menu and linking it... my game doesn't actually work because I broke 
 11/13/21 [Working]:
 Working on Menu CSS and functionality. Am panicking a little about the actual functionality of the game itself but I don't know what I don't know so I need to take a break and work on everything else haha. My goal today is to resize my buttons and link them to the proper functions. If I get this done I will go back to trying to fix my death and scoreboard
 
+11/14/21 [Working]:
+I got the menu to lnk with my game. Opted out and just used an a href but now my button is not styled... Success!
+
 
  

@@ -14,7 +14,7 @@
       font-size: 3em;
     }
     
-    .menuButtons, #play {
+     .menuButtons, .playButton{
     background-color: #31ffa0;
     color: black;
     padding: 25px;
@@ -24,10 +24,11 @@
     font-weight: bold;
     font-size: 1em;
     font-family: "Chewy";
+    text-align: center;
     /* margin-left: 300px; */
     }
     
-    .menuButton, #play:hover {
+    .menuButtons,.playButton:hover {
         background-color: #4CAF50; /* Green */
         color: white;
       }
@@ -45,7 +46,7 @@
     
     }
     
-    .menuButton, #settings:hover {
+    .menuButtons, #settings:hover {
         background-color: #E67C00; 
         color: white;
       }
@@ -62,7 +63,7 @@
         font-family: "Chewy";
     
     } 
-    .menuButton, #exit:hover {
+    .menuButtons, #exit:hover {
         background-color:  #7000D1; 
         color: white;
       }
@@ -74,7 +75,7 @@
         width: 100%;
         margin-top: 50px;
         /* justify-content: center; */
-        background-color: lightblue;
+        background-color: transparent;
         
     /* margin: 500px; */
     /* justify-content: center; */
@@ -83,7 +84,7 @@
     .menu {
         justify-content: center;
         width: 100%;
-        background-color: lightsteelblue;
+        background-color: transparent;
       
     }
 

@@ -17,6 +17,11 @@ body {
 }
 </style>
 </head>
+<div class="popup" id="instructionsPopup">
+<div class="overlay"></div>
+<div class="content"></div>
+<div class="close-instructions" onclick="popupBtn()">&times;</div>
+</div>
 
 <body>
     <h1 id="menuTitle">
@@ -31,7 +36,7 @@ body {
         <a target="_blank" class="playButton" href="index.html">Play!</a>
    
 <!-- <a class="play" href="index.html"><button > Play!</button></a> -->
-<button id="settings">Settings</button>
+<button id="instructions" onclick="popupBtn()">How To Play</button>
 <button id="exit" >Exit</button>
 
 <!-- onclick="self.close()" -->

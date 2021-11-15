@@ -1,4 +1,3 @@
-function closeWin() {
-  document.getElementById("exit").addEventListener("click", exit)
-  myWindow.close();
+function popupBtn(){
+document.getElementById("instructionsPopup").classList.toggle("active");
 }

@@ -26,7 +26,7 @@ Working on menu and linking it... my game doesn't actually work because I broke 
 Working on Menu CSS and functionality. Am panicking a little about the actual functionality of the game itself but I don't know what I don't know so I need to take a break and work on everything else haha. My goal today is to resize my buttons and link them to the proper functions. If I get this done I will go back to trying to fix my death and scoreboard
 
 11/14/21 [Working]:
-I got the menu to lnk with my game. Opted out and just used an a href but now my button is not styled... Success! Tried 2 ways to make instructions popup. Taking a break from css to go back to JS because I *need* to get it functional.
+I got the menu to lnk with my game. Opted out and just used an a href but now my button is not styled... Success! Tried 2 ways to make instructions popup. Taking a break from css to go back to JS because I *need* to get it functional. The crude and basic method I used to make the character and deadly object is unsexy and not dry. After watching reading/watching vids I think it would be better if I put theose 2 elements into different JS files completely.
 
 
  

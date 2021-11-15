@@ -19,12 +19,14 @@
 #character{
     width: 20px;
     height: 35px;
-    background-color: aqua;
+    background-color: AQUA;
+    /* background-image: url("images/german-shepherd");
+    background-image: 50px 50px; */
     position: relative;
     top: 215px;}
 
 .animate{
-    animation: jump 500ms;
+    animation: jump 500ms linear;
 }
 
 @keyframes jump {
@@ -36,10 +38,11 @@
 
 #killObject1{
 width: 20px;
-height: 30px;    
+height: 40px;    
 background-color: crimson;
+/* background-image: url("images/evilcat.jpg"); */
 position: relative;
-top: 185px;
+top: 175px;
 left: 320px;
 animation: killObject1 1s infinite linear;
 }

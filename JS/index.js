@@ -4,8 +4,9 @@ const killObject1 = document.getElementById("killObject1");
 
 let score = 0;
 
+
 window.addEventListener("keydown",(jump) => {
-    if (jump.key === 32) {
+    if (jump.key === "w") {
         if(character.classList != "animate"){
                 character.classList.add("animate")}
                 setTimeout(function(){
@@ -14,23 +15,20 @@ window.addEventListener("keydown",(jump) => {
     }
 })
 
-
-
-// jump(){
+// function jump(){
 //     if(character.classList != "animate"){
-//     character.classList.add("animate")}
+//     character.classList.add("animate")};
+
 //     setTimeout(function(){
-//         character.classList.remove("animate")
+//         character.classList.remove("animate");
 //     }, 500);
 // }
-// }
+
 
 // const keyActions = {
 //     Spacebar: {keydown: characterActions.jump}
 // };
 //  a failed try?
-
-
 
 // object.onkeydown = function jump(){
 //     if (character.classList.contains("animate"))
@@ -40,17 +38,13 @@ window.addEventListener("keydown",(jump) => {
 //     }, 500);
 // }
 
-// function jump(){
-//     if(character.classList != "animate"){
-//     character.classList.add("animate")}
-//     setTimeout(function(){
-//         character.classList.remove("animate")
-//     }, 500);
-// }
 
 let vitals = setInterval(() => {
     let characterHead = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
+    // gets char. Y position, use parseInt so it doesn't return px but whole values
     let kill1 = parseInt(window.getComputedStyle(killObject1).getPropertyValue("left"));
+    // deadly object position
+    
     if (kill1 < 20 && kill1 > 0 && characterHead>=220){
     killObject1.style.animation = "none";
     alert ("You Lose. Score:" +Math.floor(score/100));
@@ -59,6 +53,6 @@ let vitals = setInterval(() => {
 }else { 
     score++;
 document.getElementById("score").innerHTML = Math.floor(score/100);
-}  10);
+}  10});
 
 // Death & score (not working lol)

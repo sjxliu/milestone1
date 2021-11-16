@@ -1,7 +1,7 @@
-class character{
+class Character{
     constructor(){
-        this.chum = 50;
-        this.x = this.chum;
+        this.chum = 150;
+        this.x = 50;
         this.y = height - this.chum;
         this.vy = 0
         // velocity, speed along Y axis
@@ -23,7 +23,7 @@ this.y, 0, height - this.chum
 }
 
 show() {
-    rect(this.x, this.y, this.chum, this.chum)
+    image(charImg, this.x, this.y, this.chum, this.chum)
 }
 
 }

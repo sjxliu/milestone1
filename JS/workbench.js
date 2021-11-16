@@ -1,4 +1,18 @@
 let character;
+let charImg;
+let catImg;
+let banImg;
+let kills = [];
+
+
+
+function preload(){
+charImg = loadImage("german-shepherd.png");
+catImg = loadImage("evilcat.jpg");
+banImg = loadImage("bananaBackground.jpg");
+}
+
+
 
 function setup (){
 createCanvas(600, 450);
@@ -13,7 +27,12 @@ function keyPressed(){
 
 
 function draw (){
-    background(220);
-    character.show();
-    character.move();
+background(0)
+// if(random(1)<0.005){
+//     kills.push(new Kill());
+// }
+
+//     background(banImg);
+//     character.show();
+//     character.move();
 }

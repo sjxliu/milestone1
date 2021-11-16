@@ -28,5 +28,7 @@ Working on Menu CSS and functionality. Am panicking a little about the actual fu
 11/14/21 [Working]:
 I got the menu to lnk with my game. Opted out and just used an a href but now my button is not styled... Success! Tried 2 ways to make instructions popup. Taking a break from css to go back to JS because I *need* to get it functional. The crude and basic method I used to make the character and deadly object is unsexy and not dry. After watching reading/watching vids I think it would be better if I put theose 2 elements into different JS files completely.
 
+11/15/21 [Javascript]:
+Inside of coding the collision detection I learned I can call it from a library. 
 
  

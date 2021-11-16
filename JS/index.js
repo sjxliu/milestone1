@@ -14,17 +14,11 @@
 // hawaii.position.y = 200;
  
 
-
-
-
-
-
-
 const character = document.getElementById("character");
 
-const killObject1 = document.getElementById("killObject1");
+// const killObject1 = document.getElementById("killObject1");
 
-let score = 0;
+// let score = 0;
 
 
 function controls(e){

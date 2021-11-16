@@ -26,7 +26,7 @@
     top: 215px;
 }
 
-.animate{
+/* .animate{
     animation: jump 500ms linear;
 }
 
@@ -41,15 +41,14 @@
 width: 20px;
 height: 40px;    
 background-color: crimson;
-/* background-image: url("images/evilcat.jpg"); */
 position: relative;
 top: 175px;
 left: 320px;
-/* animation: killObject1 1s infinite linear; */
+animation: killObject1 1s infinite linear;
 }
 
 @keyframes killObject1 {
     0%{left: 1500px;}
     100%{left: -20px;}
-}
+} */
 

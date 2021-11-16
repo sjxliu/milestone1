@@ -5,7 +5,7 @@ character = new Character();
 }
 
 function keyPressed(){
-    if (key === " "){
+    if (key == " "){
         character.jump();
     }
 }

@@ -1,4 +1,5 @@
 let character;
+
 function setup (){
 createCanvas(600, 450);
 character = new Character();

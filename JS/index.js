@@ -47,12 +47,12 @@ let vitals = setInterval(() => {
     
     if (kill1 < 20 && kill1 > 0 && characterHead>=220){
     killObject1.style.animation = "none";
-    alert ("You Lose. Score:" +Math.floor(score/100));
+    alert ("You Lose. Score:" +Math.floor(score/200));
     score = 0;
     killObject1.style.animation = "killObject1 1s infinite linear";
 }else { 
     score++;
-document.getElementById("score").innerHTML = Math.floor(score/100);
+document.getElementById("score").innerHTML = Math.floor(score/200);
 }  10});
 
 // Death & score (not working lol)

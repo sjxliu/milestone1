@@ -8,6 +8,7 @@ class character{
 
 jump(){
     this.vy = -5;
+    
 }
 
 move(){

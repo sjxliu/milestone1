@@ -23,7 +23,8 @@
     /* background-image: url("images/german-shepherd");
     background-image: 50px 50px; */
     position: relative;
-    top: 215px;}
+    top: 215px;
+}
 
 .animate{
     animation: jump 500ms linear;
@@ -44,7 +45,7 @@ background-color: crimson;
 position: relative;
 top: 175px;
 left: 320px;
-animation: killObject1 1s infinite linear;
+/* animation: killObject1 1s infinite linear; */
 }
 
 @keyframes killObject1 {

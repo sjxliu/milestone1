@@ -1,3 +1,25 @@
+// let app = new PIXI.Application({ width: 2000, height: 3000,backgroundColor:0xffffff });
+// document.body.appendChild(app.view);
+
+// // let character = PIXI.Character.from('images/german-shepherd.png');
+// let hawaii = PIXI.Sprite.from("https://s3-us-west-2.amazonaws.com/s.cdpn.io/693612/IaUrttj.png");
+// console.log(hawaii)
+// app.stage.addChild(hawaii);
+
+// hawaii.anchor.x = 0;
+// hawaii.anchor.y = 0;
+ 
+// move the sprite to the center of the canvas
+// hawaii.position.x = 200;
+// hawaii.position.y = 200;
+ 
+
+
+
+
+
+
+
 const character = document.getElementById("character");
 
 const killObject1 = document.getElementById("killObject1");
@@ -13,20 +35,25 @@ jump()
 
 document.addEventListener("keyup", controls)
 
-
-
 function jump() {
+   let position = 0
 let timerId = setInterval(() => {
+
+    if(position === 150){
+    // clearInterval(timerId)
+    console.log("down")
+    }
+
+
     console.log("jumped")
-}, interval);
-
-
-
+    position += 30
+    character.style.bottom = position + "px"
+}, 20);
 }
 
 
 // window.addEventListener("keydown",(jump) => {
-//     if (jump.key === "w") {
+//     if (jump.keyCode === 32) {
 //         if(character.classList != "animate"){
 //                 character.classList.add("animate")}
 //                 setTimeout(function(){
@@ -44,12 +71,6 @@ let timerId = setInterval(() => {
 //     }, 500);
 // }
 
-
-// const keyActions = {
-//     Spacebar: {keydown: characterActions.jump}
-// };
-//  a failed try?
-
 // object.onkeydown = function jump(){
 //     if (character.classList.contains("animate"))
 //     {return} character.classList.add("animate");
@@ -59,12 +80,22 @@ let timerId = setInterval(() => {
 // }
 
 
+
+
+// collision (killObject1) {
+//     collideRectRect(200, 200, 100, 150, mouseX, mouseY, 50, 75);
+// }
+
 // let vitals = setInterval(() => {
 //     let characterHead = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
 //     // gets char. Y position, use parseInt so it doesn't return px but whole values
 //     let kill1 = parseInt(window.getComputedStyle(killObject1).getPropertyValue("left"));
 //     // deadly object position
-    
+//     setInterval(() => {
+//         killObject1.style
+//     }, 300);
+//     console.log("CHARACTER HEAD:", characterHead)
+//     console.log("KILL 1:", kill1)
 //     if (kill1 < 20 && kill1 > 0 && characterHead>=220){
 //     killObject1.style.animation = "none";
 //     alert ("You Lose. Score:" +Math.floor(score/200));
@@ -73,6 +104,6 @@ let timerId = setInterval(() => {
 // }else { 
 //     score++;
 // document.getElementById("score").innerHTML = Math.floor(score/200);
-// }  10});
+// }  1000});
 
 // Death & score (not working lol)

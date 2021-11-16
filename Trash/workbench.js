@@ -27,12 +27,11 @@ function keyPressed(){
 
 
 function draw (){
-background(0)
-// if(random(1)<0.005){
-//     kills.push(new Kill());
-// }
+if(random(1)<0.005){
+    kills.push(new Kill());
+}
 
-//     background(banImg);
-//     character.show();
-//     character.move();
+    background(banImg);
+    character.show();
+    character.move();
 }

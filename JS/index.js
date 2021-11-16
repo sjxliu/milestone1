@@ -5,15 +5,35 @@ const killObject1 = document.getElementById("killObject1");
 let score = 0;
 
 
-window.addEventListener("keydown",(jump) => {
-    if (jump.key === "w") {
-        if(character.classList != "animate"){
-                character.classList.add("animate")}
-                setTimeout(function(){
-                    character.classList.remove("animate")
-                }, 500);
+function controls(e){
+    if (e.keyCode === 32){
+jump()
     }
-})
+}
+
+document.addEventListener("keyup", controls)
+
+
+
+function jump() {
+let timerId = setInterval(() => {
+    console.log("jumped")
+}, interval);
+
+
+
+}
+
+
+// window.addEventListener("keydown",(jump) => {
+//     if (jump.key === "w") {
+//         if(character.classList != "animate"){
+//                 character.classList.add("animate")}
+//                 setTimeout(function(){
+//                     character.classList.remove("animate")
+//                 }, 500);
+//     }
+// })
 
 // function jump(){
 //     if(character.classList != "animate"){
@@ -39,20 +59,20 @@ window.addEventListener("keydown",(jump) => {
 // }
 
 
-let vitals = setInterval(() => {
-    let characterHead = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
-    // gets char. Y position, use parseInt so it doesn't return px but whole values
-    let kill1 = parseInt(window.getComputedStyle(killObject1).getPropertyValue("left"));
-    // deadly object position
+// let vitals = setInterval(() => {
+//     let characterHead = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
+//     // gets char. Y position, use parseInt so it doesn't return px but whole values
+//     let kill1 = parseInt(window.getComputedStyle(killObject1).getPropertyValue("left"));
+//     // deadly object position
     
-    if (kill1 < 20 && kill1 > 0 && characterHead>=220){
-    killObject1.style.animation = "none";
-    alert ("You Lose. Score:" +Math.floor(score/200));
-    score = 0;
-    killObject1.style.animation = "killObject1 1s infinite linear";
-}else { 
-    score++;
-document.getElementById("score").innerHTML = Math.floor(score/200);
-}  10});
+//     if (kill1 < 20 && kill1 > 0 && characterHead>=220){
+//     killObject1.style.animation = "none";
+//     alert ("You Lose. Score:" +Math.floor(score/200));
+//     score = 0;
+//     killObject1.style.animation = "killObject1 1s infinite linear";
+// }else { 
+//     score++;
+// document.getElementById("score").innerHTML = Math.floor(score/200);
+// }  10});
 
 // Death & score (not working lol)

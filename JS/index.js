@@ -12,19 +12,56 @@ window.addEventListener("keydown",(jump) => {
     }
 })
 
-let vitals = setInterval(function() {
-    let characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
+function vitals(){
+    function charV(){ 
+  let characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("bottom"));
     let kill1 = parseInt(window.getComputedStyle(killObject1).getPropertyValue("left"));
-    if(killObject1<20 && killObject1>-20 && characterTop<=130){
-        killObject1.style.animation = "none";
-        alert("Game Over. score: "+Math.floor(counter/60));
-        counter=0;
-        killObject1.style.animation = "block 1s infinite linear";
-    }else{
-        counter++;
-        document.getElementById("scoreSpan").innerHTML = Math.floor(counter/60);
-    }
-}, 10);
+    // console.log(characterTop, kill1)
+    if(kill1<20 && kill1>-20 && characterTop<=-160){dead()}else{next()}
+}
+
+function dead() {
+    killObject1.classList.remove=("animate");
+    clearInterval(core)
+console.log("dead");
+const score= document.getElementById("scoreSpan");
+if(score.innerHTML<Math.floor(counter/60)){
+    score.innerHTML=Math.floor(counter/60);
+}
+counter = 0;
+}
+//         // kill1.style.animation = "none";
+//         killObject1.style.animation = "none";
+//         alert("Game Over. score: "+Math.floor(counter/60));
+//         // counter=0;
+//         killObject1.style.animation = "block 1s infinite linear";
+//     }else{
+//         counter++;
+//         document.getElementById("scoreSpan").innerHTML = Math.floor(counter/60);
+//     }
+// }, 0); 
+
+function next() {
+    counter++
+    document.getElementById("scoreSpan").innerHTML = Math.floor(counter/60);
+
+}
+if (killObject1.classList == "animateKill"){return}killObject1.classList.add("animateKill");
+
+const core=setInterval(check, 10);}
+// let vitals = setInterval(function() {
+//     let characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
+//     let killLeft = parseInt(window.getComputedStyle(killObject1).getPropertyValue("left"));
+//     if(killLeft<20 && killLeft>-20 && characterTop>=160){
+//         killObject1.style.animation = "none";
+//         alert("Game Over. score: "+Math.floor(counter/60));
+//         counter=0;
+//         killObject1.style.animation = "block 1s infinite linear";
+//     }else{
+//         counter++;
+//         document.getElementById("scoreSpan").innerHTML = Math.floor(counter/60);
+//     }
+// }, 10);
 
 // collision (killObject1) {
 //     collideRectRect(200, 200, 100, 150, mouseX, mouseY, 50, 75);

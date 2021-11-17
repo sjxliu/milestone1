@@ -43,10 +43,9 @@ background-color: crimson;
 position: relative;
 top: 185px;
 left: 320px;
+animation: killObject1 1s infinite linear;
 }
 
-.animateKill {animation: killObject1 1s infinite linear;
-}
 
 @keyframes killObject1 {
     0%{left: 1500px;}

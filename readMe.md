@@ -31,4 +31,7 @@ I got the menu to lnk with my game. Opted out and just used an a href but now my
 11/15/21 [Javascript]:
 Inside of coding the collision detection I learned I can call it from a library. Am working on the JS to have more fluid game play. Decided against using multiple JS for the character, object, and game play. 
 
+11/17/21 [Finishing...]:
+Forgot to write about yesterday. Got it to detect collision and die but score is still not showing...
+
  

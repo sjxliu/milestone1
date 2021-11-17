@@ -1,0 +1,19 @@
+/* *{
+    padding: 0px;
+    margin: 0px;
+} */
+
+p {
+    color: #ffc300;
+    position: relative;
+    margin: 250px;
+  text-align: center;
+
+}
+
+.backButton, .button{
+    color: #ffc300;
+    position: relative;
+margin-top: 250px;
+text-align: center;
+}

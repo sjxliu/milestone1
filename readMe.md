@@ -26,12 +26,15 @@ Working on menu and linking it... my game doesn't actually work because I broke 
 Working on Menu CSS and functionality. Am panicking a little about the actual functionality of the game itself but I don't know what I don't know so I need to take a break and work on everything else haha. My goal today is to resize my buttons and link them to the proper functions. If I get this done I will go back to trying to fix my death and scoreboard
 
 11/14/21 [Working]:
-I got the menu to lnk with my game. Opted out and just used an a href but now my button is not styled... Success! Tried 2 ways to make instructions popup. Taking a break from css to go back to JS because I *need* to get it functional. The crude and basic method I used to make the character and deadly object is unsexy and not dry. After watching reading/watching vids I think it would be better if I put theose 2 elements into different JS files completely.
+I got the menu to link with my game. Opted out and just used an a href but now my button is not styled... Success! Tried 2 ways to make instructions popup. Taking a break from css to go back to JS because I *need* to get it functional. The crude and basic method I used to make the character and deadly object is unsexy and not dry. After watching reading/watching vids I think it would be better if I put theose 2 elements into different JS files completely.
 
 11/15/21 [Javascript]:
 Inside of coding the collision detection I learned I can call it from a library. Am working on the JS to have more fluid game play. Decided against using multiple JS for the character, object, and game play. 
 
+11/16/21 [Refining]:
+Forgot to log
+
 11/17/21 [Finishing...]:
-Forgot to write about yesterday. Got it to detect collision and die but score is still not showing...
+Forgot to write about yesterday. Got it to detect collision and die but score is still not showing... I got the timer/scoreboard to work however the timer does not reset unless page reloads
 
  

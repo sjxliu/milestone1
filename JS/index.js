@@ -35,7 +35,7 @@ let vitals = setInterval(function() {
             // Math.floor(counter/60);
         }
     }, 0); 
-    
+
 let time = 0;
 const countDown = setInterval(() => {
 ++time;
@@ -44,6 +44,11 @@ if (time <= 0){
     time = 0;
 }
 }, 600);
+
+function stopTimer() {
+    clearInterval(countDown);
+    let time = 0;
+}
 
 
 
@@ -105,4 +110,3 @@ if (time <= 0){
 // document.getElementById("score").innerHTML = Math.floor(score/200);
 // }  1000});
 
-// Death & score (not working lol 

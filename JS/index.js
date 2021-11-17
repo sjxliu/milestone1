@@ -15,11 +15,11 @@ window.addEventListener("keydown",(jump) => {
 let vitals = setInterval(function() {
     let characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
     let kill1 = parseInt(window.getComputedStyle(killObject1).getPropertyValue("left"));
-    if(kill1<20 && kill1>-20 && characterTop>=130){
-        kill1.style.animation = "none";
+    if(killObject1<20 && killObject1>-20 && characterTop<=130){
+        killObject1.style.animation = "none";
         alert("Game Over. score: "+Math.floor(counter/60));
         counter=0;
-        kill1.style.animation = "block 1s infinite linear";
+        killObject1.style.animation = "block 1s infinite linear";
     }else{
         counter++;
         document.getElementById("scoreSpan").innerHTML = Math.floor(counter/60);

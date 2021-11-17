@@ -9,25 +9,24 @@
     justify-content: center;
 }
 
+
 #game {
     width: auto;
     height: 250px;
     border: 1px solid black;
     margin: auto;
+    /* background-image: url(images/bananaBackground.jpg); */
 }
 
 #character{
     width: 20px;
     height: 35px;
-    background-color: AQUA;
-    /* background-image: url("images/german-shepherd");
-    background-image: 50px 50px; */
+    background-color: aqua;
     position: relative;
-    top: 215px;
-}
+    top: 215px;}
 
-/* .animate{
-    animation: jump 500ms linear;
+.animate{
+    animation: jump 500ms;
 }
 
 @keyframes jump {
@@ -39,10 +38,10 @@
 
 #killObject1{
 width: 20px;
-height: 40px;    
+height: 30px;    
 background-color: crimson;
 position: relative;
-top: 175px;
+top: 185px;
 left: 320px;
 animation: killObject1 1s infinite linear;
 }
@@ -50,5 +49,4 @@ animation: killObject1 1s infinite linear;
 @keyframes killObject1 {
     0%{left: 1500px;}
     100%{left: -20px;}
-} */
-
+}

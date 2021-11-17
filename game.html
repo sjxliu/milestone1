@@ -5,7 +5,7 @@
     <!-- onclick="jump()" -->
 <!-- moving this out of the html -->
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" onclick="jump()">
     <title>Milestone Project 1</title>
     <link rel='stylesheet' href='assets/styles.css'> 
     <!-- UNCOMMENT FOR CRUDE WORKINGS -->
@@ -13,7 +13,7 @@
 
 
        <!-- <script src="https://pixijs.download/release/pixi.min.js"></script> -->
-       <script src="JS/index.js"></script>
+      
 
 
     <style>
@@ -24,30 +24,20 @@
 </head>
 
 <body>
-<h1 id="mainh1">Bored</h1>
 
-
- <div id="game"> 
-    <div id="character">
-    </div>  
-
-  <div id="killObject1"></div>
-
-</div> 
-
-
-<!-- <element onkeydown="myScript"> -->
-
-<section>Time: <span id="score"></span></section> 
-
-</body>
-
-
-<!-- <script src="/JS/character.js"></script>
-<script src="/JS/kill.js"></script>
-<script src="/JS/workbench.js"></script> -->
-
-</html>
+    <h1 id="mainh1">Bored</h1>
+    <div id="game"> 
+        <div id="character"></div> 
+        <!-- Find element to put these in other than div & wrap this all in a canvas later? -->
+        <div id="killObject1"></div>
+    </div>
+    
+    <p>Score: <span id="scoreSpan"></span></p>
+    </body>
+    
+    <script src="JS/index.js"></script>
+    
+    </html>
 
 <!-- Asks for user's name and uses it to display back -->
 

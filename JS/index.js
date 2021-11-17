@@ -1,80 +1,30 @@
-// let app = new PIXI.Application({ width: 2000, height: 3000,backgroundColor:0xffffff });
-// document.body.appendChild(app.view);
-
-// // let character = PIXI.Character.from('images/german-shepherd.png');
-// let hawaii = PIXI.Sprite.from("https://s3-us-west-2.amazonaws.com/s.cdpn.io/693612/IaUrttj.png");
-// console.log(hawaii)
-// app.stage.addChild(hawaii);
-
-// hawaii.anchor.x = 0;
-// hawaii.anchor.y = 0;
- 
-// move the sprite to the center of the canvas
-// hawaii.position.x = 200;
-// hawaii.position.y = 200;
- 
-
 const character = document.getElementById("character");
+const killObject1 = document.getElementById("killObject1");
+const counter=0;
 
-// const killObject1 = document.getElementById("killObject1");
-
-// let score = 0;
-
-
-function controls(e){
-    if (e.keyCode === 32){
-jump()
+window.addEventListener("keydown",(jump) => {
+    if (jump.key === "w") {
+        if(character.classList != "animate"){
+                character.classList.add("animate")}
+                setTimeout(function(){
+                    character.classList.remove("animate")
+                }, 500);
     }
-}
+})
 
-document.addEventListener("keyup", controls)
-
-function jump() {
-   let position = 0
-let timerId = setInterval(() => {
-
-    if(position === 150){
-    // clearInterval(timerId)
-    console.log("down")
+let vitals = setInterval(function() {
+    let characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
+    let kill1 = parseInt(window.getComputedStyle(killObject1).getPropertyValue("left"));
+    if(kill1<20 && kill1>-20 && characterTop>=130){
+        kill1.style.animation = "none";
+        alert("Game Over. score: "+Math.floor(counter/60));
+        counter=0;
+        kill1.style.animation = "block 1s infinite linear";
+    }else{
+        counter++;
+        document.getElementById("scoreSpan").innerHTML = Math.floor(counter/60);
     }
-
-
-    console.log("jumped")
-    position += 30
-    character.style.bottom = position + "px"
-}, 20);
-}
-
-
-// window.addEventListener("keydown",(jump) => {
-//     if (jump.keyCode === 32) {
-//         if(character.classList != "animate"){
-//                 character.classList.add("animate")}
-//                 setTimeout(function(){
-//                     character.classList.remove("animate")
-//                 }, 500);
-//     }
-// })
-
-// function jump(){
-//     if(character.classList != "animate"){
-//     character.classList.add("animate")};
-
-//     setTimeout(function(){
-//         character.classList.remove("animate");
-//     }, 500);
-// }
-
-// object.onkeydown = function jump(){
-//     if (character.classList.contains("animate"))
-//     {return} character.classList.add("animate");
-//     setTimeout(() => {
-//         character.classList.remove("animate")
-//     }, 500);
-// }
-
-
-
+}, 10);
 
 // collision (killObject1) {
 //     collideRectRect(200, 200, 100, 150, mouseX, mouseY, 50, 75);
@@ -100,4 +50,4 @@ let timerId = setInterval(() => {
 // document.getElementById("score").innerHTML = Math.floor(score/200);
 // }  1000});
 
-// Death & score (not working lol)
+// Death & score (not working lol 

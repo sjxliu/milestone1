@@ -21,14 +21,31 @@ let vitals = setInterval(function() {
             // kill1.style.animation = "none";
             console.log('hello')
             killObject1.style.animation = "none";
-            alert("Game Over. score: "+Math.floor(counter/60));
+            alert("Game Over. score: "+ time
+            
+            // Math.floor(counter/60)
+            
+            );
             counter=0;
             killObject1.style.animation = "block 1s infinite linear";
         }else{
             counter++;
-            document.getElementById("scoreSpan").innerHTML = Math.floor(counter/60);
+            document.getElementById("scoreSpan").innerHTML = 
+            time
+            // Math.floor(counter/60);
         }
     }, 0); 
+    
+let time = 0;
+const countDown = setInterval(() => {
+++time;
+document.getElementById("timer").innerHTML = time;
+if (time <= 0){
+    time = 0;
+}
+}, 600);
+
+
 
 // function vitals(){
 //     function charV(){ 

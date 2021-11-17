@@ -35,6 +35,6 @@ Inside of coding the collision detection I learned I can call it from a library.
 Forgot to log
 
 11/17/21 [Finishing...]:
-Forgot to write about yesterday. Got it to detect collision and die but score is still not showing... I got the timer/scoreboard to work however the timer does not reset unless page reloads
+Forgot to write about yesterday. Got it to detect collision and die but score is still not showing... I got the timer/scoreboard to work however the timer does not reset unless page reloads. I managed to get the button for exit to work but only when path is copied from terminal.
 
  

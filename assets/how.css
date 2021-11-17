@@ -16,4 +16,10 @@ p {
     position: relative;
 margin-top: 250px;
 text-align: center;
+background-color: steelblue;
 }
+
+.backButton, .button:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+  }
